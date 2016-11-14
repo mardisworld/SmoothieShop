@@ -18,8 +18,9 @@ public class Main {
 		AbstractApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
 		//Recipe Example
-		Recipe r = context.getBean("bestSmoothie", Recipe.class);
+		Recipe r = context.getBean("anotherSmoothie", Recipe.class);
 		
+		logger.info(r.getName());
 		logger.info(printPretty("Ingredients:", r.getIngredients()));
 		logger.info(printPretty("Instructions:", r.getInstructions()));
 		logger.info(r.getCost());
