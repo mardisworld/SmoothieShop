@@ -35,7 +35,9 @@ public class Ingredient {
 
 	@Override
 	public String toString() {
-		return this.type + " " + this.name;
+		//return this.type + " " + this.name;
+		return String.format("%s %s (%d on hand)", type, name, qty);
+
 	}
 
 	public String getName() {
