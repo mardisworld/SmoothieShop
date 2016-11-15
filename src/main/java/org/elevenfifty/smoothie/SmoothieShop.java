@@ -35,7 +35,7 @@ public class SmoothieShop {
 		browser.displayRecipes();
 		Recipe selectedRecipe = browser.readRecipe();//*error 
 		selectedRecipe.consumeIngredients();
-		PrettyPrinter.print(browser.readRecipe());
+		PrettyPrinter.print(selectedRecipe);
 		
 	//	logger.info(printPretty("Ingredients:", s.getIngredients()));
 	//	logger.info(printPretty("Instructions:", s.getInstructions()));
