@@ -16,5 +16,11 @@ public class Inventory {
 			return true;
 		}
 
+		public static void consumeIngredients(Item item) {
+			for (Ingredient in : item.getIngredients()) {
+				in.setQty(in.getQty() - 1);
+			}
+		}
+
 }
 

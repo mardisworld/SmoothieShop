@@ -1,8 +1,7 @@
 package org.elevenfifty.smoothie.util;
 
-import java.util.InputMismatchException;
-import java.util.Scanner;
 
+import java.util.Scanner;
 import org.elevenfifty.smoothie.Configuration;
 import org.elevenfifty.smoothie.beans.Recipe;
 import static org.elevenfifty.smoothie.util.Inventory.hasSufficientInventory;

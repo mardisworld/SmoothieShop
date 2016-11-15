@@ -1,7 +1,7 @@
 package org.elevenfifty.smoothie.util;
 
+import static java.lang.System.out;
 import java.util.List;
-
 import org.elevenfifty.smoothie.decoratored.Item;
 
 public final class PrettyPrinter {
@@ -19,6 +19,15 @@ public final class PrettyPrinter {
 		}
 		return b.toString();
 	}
+
+	public static void prettyPrint(Item item) {
+		out.println();
+		out.println(item.getName());
+		out.println(printPretty("Ingredients:", item.getIngredients()));
+		out.println(printPretty("Instructions:", item.getInstructions()));
+		out.format("Cost: $%,01.2f%n", item.getCost());
+	}
+
 
 	public static void print(Item item) {
 		System.out.println(item.getName());
