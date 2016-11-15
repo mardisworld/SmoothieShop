@@ -10,7 +10,9 @@ public class Ingredient {
 	protected String name;
 	protected Type type;
 	protected double cost = 0d;
+	protected int qty;
 	
+
 	@Override
 	public boolean equals(Object obj) {
 		if(!(obj instanceof Ingredient)){
@@ -50,6 +52,14 @@ public class Ingredient {
 
 	public void setCost(double cost) {
 		this.cost = cost;
+	}
+	
+	public int getQty() {
+		return qty;
+	}
+
+	public void setQty(int qty) {
+		this.qty = qty;
 	}
 
 	public Type getType() {

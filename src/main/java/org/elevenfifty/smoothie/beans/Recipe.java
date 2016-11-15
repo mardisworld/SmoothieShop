@@ -2,8 +2,10 @@ package org.elevenfifty.smoothie.beans;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.elevenfifty.smoothie.decoratored.Item;
 
-public class Recipe {
+
+public class Recipe implements Item {
 
 	private String name;
 	private List<Ingredient> ingredients;
