@@ -11,8 +11,8 @@ import org.elevenfifty.smoothie.util.PrettyPrinter;
 
 
 
-public class Main {
-	//private static final Logger logger = Logger.getLogger(Main.class);
+public class SmoothieShop {
+	//private static final Logger logger = Logger.getLogger(SmoothieShop.class);
 
 	public static void main(String[] args) throws IOException {
 		Configuration config = Configuration.configure("recipes.csv", "ingredients.csv");
@@ -33,6 +33,8 @@ public class Main {
 
 		Browser browser = new Browser(config);
 		browser.displayRecipes();
+		Recipe selectedRecipe = browser.readRecipe();//*error 
+		selectedRecipe.consumeIngredients();
 		PrettyPrinter.print(browser.readRecipe());
 		
 	//	logger.info(printPretty("Ingredients:", s.getIngredients()));

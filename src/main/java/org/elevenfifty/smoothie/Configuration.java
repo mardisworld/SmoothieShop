@@ -66,7 +66,7 @@ public class Configuration {
 				ingredient.setName(row.get("Name"));
 				ingredient.setCost(Double.valueOf(row.get("Cost")));
 				ingredient.setType(Type.valueOf(row.get("Type")));
-				//ingredient.setQty(Integer.valueOf(row.get("Quantity")));//when did this happen?
+				ingredient.setQty(Integer.valueOf(row.get("Quantity")));//Step4
 				ingredientMap.put(ingredient.getName(), ingredient);
 				ingredients.add(ingredient);
 			}

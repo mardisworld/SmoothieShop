@@ -2,7 +2,7 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'application'
 
-mainClassName = "org.elevenfifty.smoothie.Main"
+mainClassName = "org.elevenfifty.smoothie.SmoothieShop"
 
 jar {
     baseName = 'java202'
